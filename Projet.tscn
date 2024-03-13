@@ -1,0 +1,748 @@
+[gd_scene load_steps=83 format=2]
+
+[ext_resource path="res://Textures/tree-g3b5d10c63_1280.jpg" type="Texture" id=1]
+[ext_resource path="res://Materials/support.tres" type="Material" id=2]
+[ext_resource path="res://Textures/marbre.png" type="Texture" id=3]
+[ext_resource path="res://Textures/sol.png" type="Texture" id=4]
+[ext_resource path="res://Projet.gd" type="Script" id=5]
+
+[sub_resource type="CubeMesh" id=68]
+size = Vector3( 0.01, 0.01, 10 )
+
+[sub_resource type="SphereMesh" id=94]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.643137, 0.513726, 0.415686, 1 )
+albedo_texture = ExtResource( 4 )
+metallic = 0.44
+metallic_specular = 0.0
+roughness = 0.8
+
+[sub_resource type="CubeMesh" id=1]
+material = SubResource( 2 )
+size = Vector3( 20, 0, 20 )
+
+[sub_resource type="SpatialMaterial" id=16]
+
+[sub_resource type="CubeMesh" id=3]
+material = SubResource( 16 )
+size = Vector3( 20, 0, 20 )
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_texture = ExtResource( 3 )
+metallic_specular = 0.0
+
+[sub_resource type="CubeMesh" id=4]
+material = SubResource( 17 )
+size = Vector3( 20, 4, 0 )
+
+[sub_resource type="SpatialMaterial" id=21]
+albedo_color = Color( 0.25098, 0.156863, 0.141176, 1 )
+
+[sub_resource type="CubeMesh" id=18]
+material = SubResource( 21 )
+size = Vector3( 4, 0.15, 0.1 )
+
+[sub_resource type="SpatialMaterial" id=22]
+albedo_color = Color( 0.25098, 0.156863, 0.141176, 1 )
+
+[sub_resource type="CubeMesh" id=23]
+material = SubResource( 22 )
+size = Vector3( 0.15, 2, 0.1 )
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_texture = ExtResource( 1 )
+metallic_specular = 1.0
+roughness = 0.17
+
+[sub_resource type="CubeMesh" id=20]
+material = SubResource( 19 )
+size = Vector3( 4, 2, 0 )
+
+[sub_resource type="SpatialMaterial" id=34]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="CubeMesh" id=5]
+material = SubResource( 34 )
+size = Vector3( 20, 4, 0 )
+
+[sub_resource type="SpatialMaterial" id=35]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="CubeMesh" id=6]
+material = SubResource( 35 )
+size = Vector3( 0, 4, 20 )
+
+[sub_resource type="SpatialMaterial" id=36]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="CubeMesh" id=7]
+material = SubResource( 36 )
+size = Vector3( 0, 4, 20 )
+
+[sub_resource type="CylinderMesh" id=8]
+material = ExtResource( 2 )
+
+[sub_resource type="CylinderMesh" id=9]
+material = ExtResource( 2 )
+
+[sub_resource type="CylinderMesh" id=10]
+material = ExtResource( 2 )
+
+[sub_resource type="CylinderMesh" id=11]
+material = ExtResource( 2 )
+
+[sub_resource type="CylinderMesh" id=12]
+material = ExtResource( 2 )
+
+[sub_resource type="CylinderMesh" id=13]
+material = ExtResource( 2 )
+
+[sub_resource type="CylinderMesh" id=14]
+material = ExtResource( 2 )
+
+[sub_resource type="CylinderMesh" id=15]
+material = ExtResource( 2 )
+
+[sub_resource type="SphereMesh" id=24]
+
+[sub_resource type="SphereMesh" id=25]
+
+[sub_resource type="SpatialMaterial" id=28]
+albedo_color = Color( 0.945098, 0.607843, 0.0666667, 1 )
+
+[sub_resource type="PrismMesh" id=29]
+material = SubResource( 28 )
+
+[sub_resource type="SpatialMaterial" id=45]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SphereMesh" id=46]
+material = SubResource( 45 )
+
+[sub_resource type="SpatialMaterial" id=26]
+albedo_color = Color( 0.254902, 0.156863, 0.156863, 1 )
+
+[sub_resource type="CubeMesh" id=27]
+material = SubResource( 26 )
+
+[sub_resource type="CapsuleShape" id=87]
+
+[sub_resource type="SphereMesh" id=47]
+
+[sub_resource type="BoxShape" id=86]
+extents = Vector3( 0.939172, 1, 1.0582 )
+
+[sub_resource type="SpatialMaterial" id=30]
+albedo_color = Color( 0.0313726, 0.360784, 0.0313726, 1 )
+
+[sub_resource type="PrismMesh" id=31]
+material = SubResource( 30 )
+
+[sub_resource type="SpatialMaterial" id=32]
+albedo_color = Color( 0.270588, 0.176471, 0.0980392, 1 )
+
+[sub_resource type="CubeMesh" id=33]
+material = SubResource( 32 )
+
+[sub_resource type="BoxShape" id=88]
+
+[sub_resource type="SpatialMaterial" id=37]
+albedo_color = Color( 0.937255, 0, 0, 1 )
+metallic = 1.0
+metallic_specular = 0.61
+roughness = 0.25
+
+[sub_resource type="SphereMesh" id=38]
+material = SubResource( 37 )
+
+[sub_resource type="SpatialMaterial" id=39]
+albedo_color = Color( 1, 0.709804, 0, 1 )
+metallic = 1.0
+metallic_specular = 0.93
+roughness = 0.15
+
+[sub_resource type="CylinderMesh" id=40]
+material = SubResource( 39 )
+
+[sub_resource type="SphereShape" id=89]
+
+[sub_resource type="SpatialMaterial" id=48]
+albedo_color = Color( 0.996078, 0.686275, 0.803922, 1 )
+
+[sub_resource type="SphereMesh" id=49]
+material = SubResource( 48 )
+
+[sub_resource type="SpatialMaterial" id=50]
+albedo_color = Color( 0.996078, 0.686275, 0.803922, 1 )
+
+[sub_resource type="SphereMesh" id=51]
+material = SubResource( 50 )
+
+[sub_resource type="SpatialMaterial" id=54]
+albedo_color = Color( 0.960784, 0.541176, 0.717647, 1 )
+
+[sub_resource type="CylinderMesh" id=55]
+material = SubResource( 54 )
+
+[sub_resource type="SpatialMaterial" id=52]
+albedo_color = Color( 0.996078, 0.686275, 0.803922, 1 )
+
+[sub_resource type="CapsuleMesh" id=53]
+material = SubResource( 52 )
+
+[sub_resource type="SpatialMaterial" id=56]
+albedo_color = Color( 0.996078, 0.686275, 0.803922, 1 )
+
+[sub_resource type="CylinderMesh" id=57]
+material = SubResource( 56 )
+
+[sub_resource type="SpatialMaterial" id=58]
+albedo_color = Color( 0.996078, 0.686275, 0.803922, 1 )
+
+[sub_resource type="PrismMesh" id=59]
+material = SubResource( 58 )
+
+[sub_resource type="BoxShape" id=92]
+
+[sub_resource type="SpatialMaterial" id=66]
+albedo_color = Color( 0.243137, 0.501961, 0.180392, 1 )
+
+[sub_resource type="SphereMesh" id=67]
+material = SubResource( 66 )
+
+[sub_resource type="SpatialMaterial" id=63]
+albedo_color = Color( 0.4, 0.792157, 0.305882, 1 )
+
+[sub_resource type="SphereMesh" id=61]
+material = SubResource( 63 )
+
+[sub_resource type="SpatialMaterial" id=64]
+albedo_color = Color( 0.4, 0.792157, 0.305882, 1 )
+
+[sub_resource type="SphereMesh" id=65]
+material = SubResource( 64 )
+
+[sub_resource type="SpatialMaterial" id=62]
+albedo_color = Color( 0.4, 0.792157, 0.305882, 1 )
+
+[sub_resource type="SphereMesh" id=60]
+material = SubResource( 62 )
+
+[sub_resource type="BoxShape" id=93]
+
+[sub_resource type="SpatialMaterial" id=41]
+albedo_color = Color( 0.6, 0, 1, 1 )
+metallic = 1.0
+metallic_specular = 0.87
+roughness = 0.13
+
+[sub_resource type="SphereMesh" id=42]
+material = SubResource( 41 )
+
+[sub_resource type="SphereShape" id=90]
+
+[sub_resource type="SpatialMaterial" id=43]
+albedo_color = Color( 0, 0.0784314, 1, 1 )
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.08
+
+[sub_resource type="SphereMesh" id=44]
+material = SubResource( 43 )
+
+[sub_resource type="SphereShape" id=91]
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="ARVROrigin" type="ARVROrigin" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+
+[node name="ARVRCamera" type="ARVRCamera" parent="ARVROrigin"]
+
+[node name="ARVRControllerD" type="ARVRController" parent="ARVROrigin"]
+controller_id = 2
+
+[node name="Ray" type="MeshInstance" parent="ARVROrigin/ARVRControllerD"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5 )
+mesh = SubResource( 68 )
+skeleton = NodePath("../../..")
+
+[node name="Cursor" type="MeshInstance" parent="ARVROrigin/ARVRControllerD"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0 )
+mesh = SubResource( 94 )
+
+[node name="ARVRControllerG" type="ARVRController" parent="ARVROrigin"]
+
+[node name="Salle" type="Spatial" parent="."]
+
+[node name="Sol" type="MeshInstance" parent="Salle"]
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Salle/Sol"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+light_color = Color( 0.796078, 0.921569, 0.968627, 1 )
+light_energy = 0.5
+
+[node name="Toit" type="MeshInstance" parent="Salle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0 )
+mesh = SubResource( 3 )
+
+[node name="Mur1" type="MeshInstance" parent="Salle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 10 )
+mesh = SubResource( 4 )
+
+[node name="Spatial" type="Spatial" parent="Salle/Mur1"]
+
+[node name="Bord1" type="MeshInstance" parent="Salle/Mur1/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45, 0 )
+mesh = SubResource( 18 )
+
+[node name="Bord2" type="MeshInstance" parent="Salle/Mur1/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.45, 0 )
+mesh = SubResource( 18 )
+
+[node name="Bord3" type="MeshInstance" parent="Salle/Mur1/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Bord4" type="MeshInstance" parent="Salle/Mur1/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Milieu1" type="MeshInstance" parent="Salle/Mur1/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+mesh = SubResource( 18 )
+
+[node name="Milieu2" type="MeshInstance" parent="Salle/Mur1/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Fenetre" type="MeshInstance" parent="Salle/Mur1/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.0010004 )
+mesh = SubResource( 20 )
+skeleton = NodePath("../..")
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Salle/Mur1/Spatial/Fenetre"]
+light_energy = 0.4
+
+[node name="Mur2" type="MeshInstance" parent="Salle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10 )
+mesh = SubResource( 5 )
+
+[node name="Spatial" type="Spatial" parent="Salle/Mur2"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
+
+[node name="Bord1" type="MeshInstance" parent="Salle/Mur2/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45, 0 )
+mesh = SubResource( 18 )
+
+[node name="Bord2" type="MeshInstance" parent="Salle/Mur2/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.45, 0 )
+mesh = SubResource( 18 )
+
+[node name="Bord3" type="MeshInstance" parent="Salle/Mur2/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Bord4" type="MeshInstance" parent="Salle/Mur2/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Milieu1" type="MeshInstance" parent="Salle/Mur2/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+mesh = SubResource( 18 )
+
+[node name="Milieu2" type="MeshInstance" parent="Salle/Mur2/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Fenetre" type="MeshInstance" parent="Salle/Mur2/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.0010004 )
+mesh = SubResource( 20 )
+skeleton = NodePath("../../../Mur1")
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Salle/Mur2/Spatial/Fenetre"]
+light_energy = 0.3
+
+[node name="Mur3" type="MeshInstance" parent="Salle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 0 )
+mesh = SubResource( 6 )
+
+[node name="Spatial2" type="Spatial" parent="Salle/Mur3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
+
+[node name="Bord1" type="MeshInstance" parent="Salle/Mur3/Spatial2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45, 0 )
+mesh = SubResource( 18 )
+
+[node name="Bord2" type="MeshInstance" parent="Salle/Mur3/Spatial2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.45, 0 )
+mesh = SubResource( 18 )
+
+[node name="Bord3" type="MeshInstance" parent="Salle/Mur3/Spatial2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Bord4" type="MeshInstance" parent="Salle/Mur3/Spatial2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Milieu1" type="MeshInstance" parent="Salle/Mur3/Spatial2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+mesh = SubResource( 18 )
+
+[node name="Milieu2" type="MeshInstance" parent="Salle/Mur3/Spatial2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Fenetre" type="MeshInstance" parent="Salle/Mur3/Spatial2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.0010004 )
+mesh = SubResource( 20 )
+skeleton = NodePath("../../../Mur1")
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Salle/Mur3/Spatial2/Fenetre"]
+light_energy = 0.3
+
+[node name="Mur4" type="MeshInstance" parent="Salle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, 0 )
+mesh = SubResource( 7 )
+
+[node name="Spatial3" type="Spatial" parent="Salle/Mur4"]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 0 )
+
+[node name="Bord1" type="MeshInstance" parent="Salle/Mur4/Spatial3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45, 0 )
+mesh = SubResource( 18 )
+
+[node name="Bord2" type="MeshInstance" parent="Salle/Mur4/Spatial3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.45, 0 )
+mesh = SubResource( 18 )
+
+[node name="Bord3" type="MeshInstance" parent="Salle/Mur4/Spatial3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Bord4" type="MeshInstance" parent="Salle/Mur4/Spatial3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Milieu1" type="MeshInstance" parent="Salle/Mur4/Spatial3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+mesh = SubResource( 18 )
+
+[node name="Milieu2" type="MeshInstance" parent="Salle/Mur4/Spatial3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+mesh = SubResource( 23 )
+
+[node name="Fenetre" type="MeshInstance" parent="Salle/Mur4/Spatial3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.0010004 )
+mesh = SubResource( 20 )
+skeleton = NodePath("../../../Mur1")
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Salle/Mur4/Spatial3/Fenetre"]
+light_energy = 0.5
+
+[node name="Oeuvres" type="Spatial" parent="."]
+
+[node name="Supports" type="Spatial" parent="Oeuvres"]
+
+[node name="Oeuvre1" type="MeshInstance" parent="Oeuvres/Supports"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 9, 0, 0 )
+mesh = SubResource( 8 )
+skeleton = NodePath("../../..")
+
+[node name="Oeuvre2" type="MeshInstance" parent="Oeuvres/Supports"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 9, 0, 9 )
+mesh = SubResource( 9 )
+skeleton = NodePath("../../..")
+
+[node name="Oeuvre3" type="MeshInstance" parent="Oeuvres/Supports"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, -9, 0, 9 )
+mesh = SubResource( 10 )
+skeleton = NodePath("../..")
+
+[node name="Oeuvre4" type="MeshInstance" parent="Oeuvres/Supports"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, -9, 0, -9 )
+mesh = SubResource( 11 )
+skeleton = NodePath("../..")
+
+[node name="Oeuvre5" type="MeshInstance" parent="Oeuvres/Supports"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, -9, 0, 0 )
+mesh = SubResource( 12 )
+skeleton = NodePath("../..")
+
+[node name="Oeuvre6" type="MeshInstance" parent="Oeuvres/Supports"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, -9 )
+mesh = SubResource( 13 )
+skeleton = NodePath("../..")
+
+[node name="Oeuvre7" type="MeshInstance" parent="Oeuvres/Supports"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 9, 0, -9 )
+mesh = SubResource( 14 )
+skeleton = NodePath("../..")
+
+[node name="Oeuvre8" type="MeshInstance" parent="Oeuvres/Supports"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 9 )
+mesh = SubResource( 15 )
+skeleton = NodePath("../..")
+
+[node name="Snowman" type="MeshInstance" parent="Oeuvres"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 9, 1.25, 0 )
+mesh = SubResource( 24 )
+skeleton = NodePath("")
+
+[node name="Tete" type="MeshInstance" parent="Oeuvres/Snowman"]
+transform = Transform( 0.7, 0, 0, 0, 0.68, 0, 0, 0, 0.7, 0, 1.2, 0 )
+mesh = SubResource( 25 )
+skeleton = NodePath("")
+
+[node name="Nez" type="MeshInstance" parent="Oeuvres/Snowman/Tete"]
+transform = Transform( -3.12948e-09, -0.285548, 0, 0.1474, -2.56977e-08, 0, 0, 0, 0.142857, -1.14286, 0, 0 )
+mesh = SubResource( 29 )
+skeleton = NodePath("")
+
+[node name="OeilG" type="MeshInstance" parent="Oeuvres/Snowman/Tete"]
+transform = Transform( 0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -0.85, 0.4, -0.3 )
+mesh = SubResource( 46 )
+
+[node name="OeilD" type="MeshInstance" parent="Oeuvres/Snowman/Tete"]
+transform = Transform( 0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -0.85, 0.4, 0.3 )
+mesh = SubResource( 46 )
+
+[node name="BrasG" type="MeshInstance" parent="Oeuvres/Snowman"]
+transform = Transform( 0.04, 0, 0, 0, 0.350026, 0.0738212, 0, -0.66914, -0.00399024, 0, 0.610916, -1.15437 )
+mesh = SubResource( 27 )
+skeleton = NodePath("")
+
+[node name="BrasD" type="MeshInstance" parent="Oeuvres/Snowman"]
+transform = Transform( -0.04, 5.84982e-08, -8.21246e-10, 0, 0.350018, 0.0718348, 3.49692e-09, 0.669142, -0.00939396, 0, 0.610916, 1.33338 )
+mesh = SubResource( 27 )
+skeleton = NodePath("")
+
+[node name="StaticBody" type="StaticBody" parent="Oeuvres/Snowman"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Oeuvres/Snowman/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 0.577871, 0 )
+shape = SubResource( 87 )
+
+[node name="Canard" type="MeshInstance" parent="Oeuvres"]
+transform = Transform( 0.176777, 0, -0.176777, 0, 0.2, 0, 0.176777, 0, 0.176777, 9, 1.15, 9 )
+mesh = SubResource( 24 )
+skeleton = NodePath("")
+
+[node name="AileG" type="MeshInstance" parent="Oeuvres/Canard"]
+transform = Transform( 0.424264, 0, 0.0707107, 0, 0.5, 0, -0.424264, 0, 0.0707107, -0.3, 0.2, -1 )
+mesh = SubResource( 47 )
+
+[node name="AileD" type="MeshInstance" parent="Oeuvres/Canard"]
+transform = Transform( 0.424264, 0, -0.0707107, 0, 0.5, 0, 0.424264, 0, 0.0707107, -0.3, 0.2, 1 )
+mesh = SubResource( 47 )
+
+[node name="Tete" type="MeshInstance" parent="Oeuvres/Canard"]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -0.619213, 1.0848, 0 )
+mesh = SubResource( 25 )
+skeleton = NodePath("")
+
+[node name="Nez" type="MeshInstance" parent="Oeuvres/Canard/Tete"]
+transform = Transform( -3.12948e-09, -0.285548, 0, 0.167053, -2.9124e-08, 0, 0, 0, 0.142857, -1.14286, 0, 0 )
+mesh = SubResource( 29 )
+skeleton = NodePath("")
+
+[node name="OeilG" type="MeshInstance" parent="Oeuvres/Canard/Tete"]
+transform = Transform( 0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -0.85, 0.4, -0.3 )
+mesh = SubResource( 46 )
+
+[node name="OeilD" type="MeshInstance" parent="Oeuvres/Canard/Tete"]
+transform = Transform( 0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -0.85, 0.4, 0.3 )
+mesh = SubResource( 46 )
+
+[node name="StaticBody" type="StaticBody" parent="Oeuvres/Canard"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Oeuvres/Canard/StaticBody"]
+transform = Transform( 1.5, 0, 0, 0, 1.2, 0, 0, 0, 1.3, 0, 0.5, 0 )
+shape = SubResource( 86 )
+
+[node name="Sapin" type="MeshInstance" parent="Oeuvres"]
+transform = Transform( 0.141421, 0, -0.0353554, 0, 0.17, 0, 0.141421, 0, 0.0353554, -9, 1.6, 9 )
+mesh = SubResource( 31 )
+skeleton = NodePath("")
+
+[node name="Pied" type="MeshInstance" parent="Oeuvres/Sapin"]
+transform = Transform( 0.25, 0, 0, 0, 0.588235, 0, 0, 0, 1, 0, -3.52941, 0 )
+mesh = SubResource( 33 )
+skeleton = NodePath("")
+
+[node name="Pic2" type="MeshInstance" parent="Oeuvres/Sapin"]
+transform = Transform( 1.125, 0, 0, 0, 1.05882, 0, 0, 0, 1, 0, -0.882353, 0 )
+mesh = SubResource( 31 )
+skeleton = NodePath("")
+
+[node name="Pic3" type="MeshInstance" parent="Oeuvres/Sapin"]
+transform = Transform( 1.25, 0, 0, 0, 1.17647, 0, 0, 0, 1, 0, -1.76471, 0 )
+mesh = SubResource( 31 )
+skeleton = NodePath("")
+
+[node name="StaticBody" type="StaticBody" parent="Oeuvres/Sapin"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Oeuvres/Sapin/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 2.2, 0, 0, 0, 1, 0, -1.2, 0 )
+shape = SubResource( 88 )
+
+[node name="Bouboule" type="MeshInstance" parent="Oeuvres"]
+transform = Transform( 0.125, 0, 0, 0, 0.12, 0, 0, 0, 0.125, -9, 1.12, -9 )
+mesh = SubResource( 38 )
+skeleton = NodePath("")
+
+[node name="Dessus" type="MeshInstance" parent="Oeuvres/Bouboule"]
+transform = Transform( 0.4, 0, 0, 0, 0.166667, 0, 0, 0, 0.4, 0, 1, 0 )
+mesh = SubResource( 40 )
+skeleton = NodePath("")
+
+[node name="StaticBody" type="StaticBody" parent="Oeuvres/Bouboule"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Oeuvres/Bouboule/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1.2, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 89 )
+
+[node name="Cochon" type="MeshInstance" parent="Oeuvres"]
+transform = Transform( 0.125, 0, 0, 0, 0.12, 0, 0, 0, 0.125, -8.75, 1.45, 0 )
+mesh = SubResource( 49 )
+skeleton = NodePath("")
+
+[node name="OreilleG" type="MeshInstance" parent="Oeuvres/Cochon"]
+transform = Transform( 0.3, 0, 0, 0, 0.4, 0, 0, 0, 0.3, 0.2, 0.8, 0.6 )
+mesh = SubResource( 51 )
+
+[node name="OreilleD" type="MeshInstance" parent="Oeuvres/Cochon"]
+transform = Transform( 0.3, 0, 0, 0, 0.4, 0, 0, 0, 0.3, 0.2, 0.8, -0.6 )
+mesh = SubResource( 51 )
+
+[node name="OeilG" type="MeshInstance" parent="Oeuvres/Cochon"]
+transform = Transform( 0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, 0.9, 0.3, -0.3 )
+mesh = SubResource( 46 )
+
+[node name="OeilD" type="MeshInstance" parent="Oeuvres/Cochon"]
+transform = Transform( 0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, 0.9, 0.3, 0.3 )
+mesh = SubResource( 46 )
+
+[node name="Nez" type="MeshInstance" parent="Oeuvres/Cochon"]
+transform = Transform( -8.74228e-09, -0.05, 0, 0.2, -2.18557e-09, 0, 0, 0, 0.3, 1, -0.1, 0 )
+mesh = SubResource( 55 )
+
+[node name="Corps" type="MeshInstance" parent="Oeuvres/Cochon"]
+transform = Transform( -6.99384e-08, 0, 1.6, 0, 1.25, 0, -1.6, 0, -6.99384e-08, -2, -1.66667, 0 )
+mesh = SubResource( 53 )
+skeleton = NodePath("")
+
+[node name="Pied1" type="MeshInstance" parent="Oeuvres/Cochon/Corps"]
+transform = Transform( 0.2, 0, 0, 0, 1, 0, 0, 0, 0.2, -0.5, -0.8, 1 )
+mesh = SubResource( 57 )
+
+[node name="Pied2" type="MeshInstance" parent="Oeuvres/Cochon/Corps"]
+transform = Transform( 0.2, 0, 0, 0, 1, 0, 0, 0, 0.2, 0.5, -0.8, 1 )
+mesh = SubResource( 57 )
+
+[node name="Pied3" type="MeshInstance" parent="Oeuvres/Cochon/Corps"]
+transform = Transform( 0.2, 0, 0, 0, 1, 0, 0, 0, 0.2, -0.5, -0.8, -0.9 )
+mesh = SubResource( 57 )
+
+[node name="Pied4" type="MeshInstance" parent="Oeuvres/Cochon/Corps"]
+transform = Transform( 0.2, 0, 0, 0, 1, 0, 0, 0, 0.2, 0.5, -0.8, -0.9 )
+mesh = SubResource( 57 )
+
+[node name="Queue" type="MeshInstance" parent="Oeuvres/Cochon/Corps"]
+transform = Transform( -2.18557e-09, 1.13566e-08, -0.1, 0.0866025, 0.15, 0, 0.05, -0.259808, -4.37114e-09, 2.33194e-09, 0.684539, -1.55035 )
+mesh = SubResource( 59 )
+
+[node name="StaticBody" type="StaticBody" parent="Oeuvres/Cochon"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Oeuvres/Cochon/StaticBody"]
+transform = Transform( 3, 0, 0, 0, 2.5, 0, 0, 0, 1.5, -1.5, -1, 0 )
+shape = SubResource( 92 )
+
+[node name="Tortue" type="MeshInstance" parent="Oeuvres"]
+transform = Transform( 0.25, 0, 0, 0, 0.1, 0, 0, 0, 0.35, 0, 1.15, -9 )
+mesh = SubResource( 67 )
+skeleton = NodePath("")
+
+[node name="Corps" type="MeshInstance" parent="Oeuvres/Tortue"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0 )
+mesh = SubResource( 61 )
+skeleton = NodePath("")
+
+[node name="Patte1" type="MeshInstance" parent="Oeuvres/Tortue/Corps"]
+transform = Transform( 0.1, 0, -0.259808, 0, 0.15, 0, 0.173205, 0, 0.15, -0.8, 0, 0.9 )
+mesh = SubResource( 65 )
+
+[node name="Patte2" type="MeshInstance" parent="Oeuvres/Tortue/Corps"]
+transform = Transform( 0.1, 0, 0.259808, 0, 0.15, 0, -0.173205, 0, 0.15, 0.8, 0, 0.9 )
+mesh = SubResource( 65 )
+
+[node name="Patte3" type="MeshInstance" parent="Oeuvres/Tortue/Corps"]
+transform = Transform( 0.1, 0, 0.259808, 0, 0.15, 0, -0.173205, 0, 0.15, -0.8, 0, -0.8 )
+mesh = SubResource( 65 )
+
+[node name="Patte4" type="MeshInstance" parent="Oeuvres/Tortue/Corps"]
+transform = Transform( 0.1, 0, -0.259808, 0, 0.15, 0, 0.173205, 0, 0.15, 0.8, 0, -0.8 )
+mesh = SubResource( 65 )
+
+[node name="Queue" type="MeshInstance" parent="Oeuvres/Tortue/Corps"]
+transform = Transform( 0.12, 0, 0, 0, 0.15, 0, 0, 0, 0.3, 0, 0, -1 )
+mesh = SubResource( 65 )
+
+[node name="Tete" type="MeshInstance" parent="Oeuvres/Tortue"]
+transform = Transform( 0.3, 0, 0, 0, 0.8, 0, 0, 0, 0.214286, 0, -0.5, 1.14286 )
+mesh = SubResource( 60 )
+skeleton = NodePath("")
+
+[node name="OeilG" type="MeshInstance" parent="Oeuvres/Tortue/Tete"]
+transform = Transform( 0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, 0.5, 0.1, 0.9 )
+mesh = SubResource( 46 )
+
+[node name="OeilD" type="MeshInstance" parent="Oeuvres/Tortue/Tete"]
+transform = Transform( 0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -0.5, 0.1, 0.9 )
+mesh = SubResource( 46 )
+
+[node name="StaticBody" type="StaticBody" parent="Oeuvres/Tortue"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Oeuvres/Tortue/StaticBody"]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.3, 0, -0.2, 0 )
+shape = SubResource( 93 )
+
+[node name="Bouboule2" type="MeshInstance" parent="Oeuvres"]
+transform = Transform( 0.125, 0, 0, 0, 0.12, 0, 0, 0, 0.125, 9, 1.12, -9 )
+mesh = SubResource( 42 )
+skeleton = NodePath("")
+
+[node name="Dessus" type="MeshInstance" parent="Oeuvres/Bouboule2"]
+transform = Transform( 0.4, 0, 0, 0, 0.166667, 0, 0, 0, 0.4, 0, 1, 0 )
+mesh = SubResource( 40 )
+skeleton = NodePath("")
+
+[node name="StaticBody" type="StaticBody" parent="Oeuvres/Bouboule2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Oeuvres/Bouboule2/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1.2, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 90 )
+
+[node name="Bouboule3" type="MeshInstance" parent="Oeuvres"]
+transform = Transform( 0.125, 0, 0, 0, 0.12, 0, 0, 0, 0.125, 0, 1.12, 9 )
+mesh = SubResource( 44 )
+skeleton = NodePath("")
+
+[node name="Dessus" type="MeshInstance" parent="Oeuvres/Bouboule3"]
+transform = Transform( 0.4, 0, 0, 0, 0.166667, 0, 0, 0, 0.4, 0, 1, 0 )
+mesh = SubResource( 40 )
+skeleton = NodePath("")
+
+[node name="StaticBody" type="StaticBody" parent="Oeuvres/Bouboule3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Oeuvres/Bouboule3/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1.2, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 91 )
+
+[connection signal="button_pressed" from="ARVROrigin/ARVRControllerD" to="." method="_on_ARVRController_button_pressed"]
+[connection signal="button_release" from="ARVROrigin/ARVRControllerD" to="." method="_on_ARVRController_button_release"]
